@@ -1,0 +1,51 @@
+{
+  "name": "@deptagency/octopus",
+  "version": "1.4.0",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "Recursive and multi-threaded broken link checker",
+  "files": [
+    "lib",
+    "config",
+    "index.js"
+  ],
+  "bin": {
+    "octopus": "./index.js"
+  },
+  "preferGlobal": true,
+  "dependencies": {
+    "async": "^2.6.1",
+    "cheerio": "^1.0.0-rc.2",
+    "draftlog": "^1.0.12",
+    "eslint-plugin-security": "^1.4.0",
+    "got": "^9.5.0",
+    "justify": "^1.0.0",
+    "lodash.differenceby": "^4.8.0",
+    "mri": "^1.1.4",
+    "prepend-http": "^2.0.0",
+    "pretty-ms": "^4.0.0",
+    "term-size": "^1.2.0"
+  },
+  "keywords": [
+    "dead",
+    "broken",
+    "links",
+    "checker",
+    "crawler"
+  ],
+  "repository": "deptagency/octopus",
+  "author": "Dept Design & Technology GmbH",
+  "devDependencies": {
+    "child-process-promise": "^2.2.1",
+    "eslint": "^5.11.1",
+    "eslint-plugin-node": "^8.0.0",
+    "mocha": "^5.2.0",
+    "must": "^0.13.4"
+  },
+  "scripts": {
+    "test": "eslint . && mocha --no-timeouts"
+  },
+  "engines": {
+    "node": ">=8.10.0"
+  }
+}

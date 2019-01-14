@@ -1,0 +1,13 @@
+{
+  "format": "\nUsage\n\t%s\n\nOptions\n\t%s\n",
+  "usage": "octopus <domain> [options]",
+  "options": [
+    "--ignore-query    Ignore a custom search query (Default: false)",
+    "--ignore-external Ignore external links (Default: false)",
+    "--ignore-nofollow Ignore rel=nofollow links (Default: false)",
+    "--slack-webhook   Slack incoming webhook url (Default: none)",
+    "--timeout         Time to wait for the server response (Default: 5000)",
+    "--silent          Run without printing progress line (Default: false)",
+    "--help            Show this help"
+  ]
+}

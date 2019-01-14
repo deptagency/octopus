@@ -1,0 +1,25 @@
+{
+  "default": {
+    "help": false,
+    "silent": false,
+    "timeout": 5000,
+    "ignore-query": [],
+    "ignore-external": false,
+    "ignore-nofollow": false,
+    "slack-webhook": ""
+  },
+  "string": [
+    "timeout",
+    "ignore-query",
+    "slack-webhook"
+  ],
+  "boolean": [
+    "help",
+    "silent",
+    "ignore-external",
+    "ignore-nofollow"
+  ],
+  "alias": {
+    "h": "help"
+  }
+}
