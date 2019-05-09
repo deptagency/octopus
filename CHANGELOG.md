@@ -1,6 +1,11 @@
 # octopus / CHANGELOG
 
 
+### 1.5.0 (2019-05-09)
+
+* New: `--include-images` to check for broken images
+
+
 ### 1.4.0 (2019-01-14)
 
 * Replace: Namespace `superreal` by `deptagency`
