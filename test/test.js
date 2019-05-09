@@ -98,4 +98,22 @@ describe( 'Octopus Playground', () => {
 
     } );
 
+    it( `octopus ${playgroundUrl} --silent --include-images`, done => {
+
+        exec( `octopus ${playgroundUrl} --silent --include-images` ).then( result => {
+
+            const data = result.stdout.trim();
+
+            data.must.include( 'https://www.deptagency.com/wp-content/uploads/fly.jpeg' );
+            data.must.include( 'APPEARS ON: https://static-pages.sr-lab.de/kunden/public/github/octopus/' );
+            data.must.include( 'STATUS MSG: NOT FOUND (404)' );
+
+            data.must.include( '8 links checked' );
+
+            done();
+
+        } )
+
+    } );
+
 } );
