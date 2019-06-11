@@ -1,5 +1,9 @@
 # octopus / CHANGELOG
 
+### 1.5.1 (2019-06-11)
+
+* Modify: Slack message format
+
 
 ### 1.5.0 (2019-05-09)
 
