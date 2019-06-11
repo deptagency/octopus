@@ -1,3 +1,4 @@
 - [x] Ignore rel="nofollow" links
 - [ ] Respect project config file
 - [x] Images check 
+- [ ] Result export
