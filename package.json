@@ -16,6 +16,7 @@
   "dependencies": {
     "async": "^2.6.1",
     "cheerio": "^1.0.0-rc.2",
+    "csv-write-stream": "^2.0.0",
     "draftlog": "^1.0.12",
     "eslint-plugin-security": "^1.4.0",
     "got": "^9.5.0",
