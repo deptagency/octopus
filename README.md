@@ -35,12 +35,29 @@ Option | Description | Default
 `--ignore-query` | Ignore a query string | `false`
 `--ignore-external` | Ignore all external links | `false`
 `--ignore-nofollow` | Ignore `rel=nofollow` links | `false`
+`--ignore-list` | A JSON file that contains a list list of URLs and domains to be ignored | `none`
 `--include-images` | Check `<img>` elements | `false`
 `--slack-webhook` | Slack incoming webhook url | `none`
 `--timeout` | Time to wait for response | `5000`
 `--silent` | Run without printing progress line | `false`
 `--help` | Output help text |  
 
+The `--ignore-list` option must contain a path to a `JSON` file that includes
+URLs and domains to be ignored. The `JSON` object must have two properties:
+`urls` and `domains`. They both have an array of strings as a value, for example:
+
+```
+{
+   "urls":[
+      "https://www.example.com/path/",
+      "https://foo.com/2"
+   ],
+   "domains":[
+      "bar.com",
+      "www.mydomain.org"
+   ]
+}
+```
 
 ### Examples
 
@@ -49,6 +66,7 @@ octopus www.deptagency.com
 octopus www.awg-mode.de --ignore-external
 octopus www.hardeck.de --ignore-query=isEnergyEfficiencyChartOpen --ignore-query=followSearch
 octopus www.golfino.com --silent --slack-webhook=https://hooks.slack.com/services/XXX/XXX/XXX
+octopus example.com --ignore-list=exclude.json
 ```
 
 

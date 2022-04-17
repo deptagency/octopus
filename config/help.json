@@ -5,6 +5,7 @@
     "--ignore-query    Ignore a custom search query (Default: false)",
     "--ignore-external Ignore external links (Default: false)",
     "--ignore-nofollow Ignore rel=nofollow links (Default: false)",
+    "--ignore-list     Path to JSON file that contains a list list of URLs and domains to be ignored (Default: none)",
     "--slack-webhook   Slack incoming webhook url (Default: none)",
     "--timeout         Time to wait for the server response (Default: 5000)",
     "--silent          Run without printing progress line (Default: false)",

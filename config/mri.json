@@ -4,6 +4,7 @@
     "silent": false,
     "timeout": 5000,
     "ignore-query": [],
+    "ignore-list": "",
     "ignore-external": false,
     "ignore-nofollow": false,
     "slack-webhook": ""
@@ -11,6 +12,7 @@
   "string": [
     "timeout",
     "ignore-query",
+    "ignore-list",
     "slack-webhook"
   ],
   "boolean": [
